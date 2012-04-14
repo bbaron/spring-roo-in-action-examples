@@ -147,20 +147,10 @@
             <artifactId>spring-aspects</artifactId>
             <version>${spring.version}</version>
         </dependency>
-    <dependency>
+        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.3.160</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>eclipselink</artifactId>
-            <version>2.2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>javax.persistence</artifactId>
-            <version>2.0.3</version>
+            <version>1.3.164</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -205,7 +195,7 @@
         <dependency>
             <groupId>commons-pool</groupId>
             <artifactId>commons-pool</artifactId>
-            <version>1.5.4</version>
+            <version>1.5.6</version>
         </dependency>
         <dependency>
             <groupId>commons-dbcp</groupId>
@@ -222,12 +212,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-    <dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-    <dependency>
+        <dependency>
             <groupId>org.springframework.webflow</groupId>
             <artifactId>spring-js-resources</artifactId>
             <version>2.2.1.RELEASE</version>
@@ -280,7 +270,7 @@
             <artifactId>commons-codec</artifactId>
             <version>1.4</version>
         </dependency>
-    <dependency>
+        <dependency>
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-core</artifactId>
             <version>2.2.1</version>
@@ -295,6 +285,31 @@
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-jsp</artifactId>
             <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>3.6.9.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>3.6.9.Final</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>cglib</groupId>
+                    <artifactId>cglib</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>dom4j</groupId>
+                    <artifactId>dom4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
         </dependency>
     </dependencies>
     <build>
